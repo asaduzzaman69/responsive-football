@@ -70,6 +70,12 @@ height: 44px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #aa4067;
+
 }
    /* ----------------
        player-part 
@@ -95,7 +101,12 @@ justify-content: center;
     padding-bottom: 15px;
     padding-top: 10px;
     max-width: 330px;
+    transition: all 0.2s;
 
+   }
+
+   .player:hover {
+       transform: scale(1.1);
    }
    .player p{
        color: #6C6C6C
@@ -187,7 +198,12 @@ padding-right: 46px;
 padding-bottom: 15px;
 padding-top: 10px;
 margin-bottom: 10px;
+transition: all 0.2s;
 
+}
+
+.box:hover {
+    transform: scaleX(1.2);
 }
 img{
     height: 66px;
