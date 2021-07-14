@@ -14,6 +14,15 @@ h2{
 h1{
     font-size: 50px;
 }
+
+/* Utils class */
+
+
+.cta-btn-container {
+    display: flex;
+}
+
+
 /* first-section */
 .aline{
     background-color: 
@@ -190,20 +199,19 @@ h4{
 
 
    /* bonus-part2 */
-   .newses{
+   .newses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-      
-       
-   }
+    padding: 20px;
+}
   .news{
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     padding-left: 13px;
     padding-right: 14px;
     padding-bottom: 14px;
     padding-top: 10px;
-    width: 330px;
+    max-width: 330px;
     
   }
   .news img{
@@ -220,6 +228,25 @@ h4{
   /* ---------------
         responsive 
   -------------------*/
+
+
+  @media only screen and (max-width: 780px) {
+    .hero-image {
+        width: 350px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .hero-image {
+        width: 100% !important;
+    }
+
+    .main {
+        padding: 0px !important;
+    } 
+  }
+
+
   
  @media only screen and (max-width:688px) {
     .container, .players, .newses, .third-part{
@@ -229,30 +256,59 @@ h4{
    .centre, .aline2, .match{
        justify-content: center;
    }
+
+   .cta-btn-container {
+       flex-direction: column;
+   }
    
+   .margin button {
+       width: 100%;
+   }
+
+   footer  img {
+       width: 300px;
+   }
     
  }
 
- @media only screen and  (min-width: 920px ) and (max-width: 1100px) {
+ @media only screen and (max-width:950px) {
+
+   .third-part {
+    grid-template-columns: 1fr;
+   }
+   .third-part .half-width img {
+       width: 100%;
+   }
+    
+ }
+
+
+
+ @media only screen and (max-width:900px) and (min-width: 689px )  {
+
+    .players {
+     grid-template-columns: repeat(2, 1fr);
+ 
+    }
+    
+     
+  }
+      
+  
+
+ @media only screen and (max-width: 1100px) {
 
     .container {
         grid-template-columns: 1fr;
+    }
+    .aline {
+        height: min-content;
     }
      
   }
       
   
 
- @media only screen and (max-width:900px) and (min-width: 689px )  {
 
-   .players {
-    grid-template-columns: repeat(2, 1fr);
-
-   }
-   
-    
- }
-     
- 
      
  
